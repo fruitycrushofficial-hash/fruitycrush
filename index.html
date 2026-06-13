@@ -3,107 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FruityCrush Sando - Toko Resmi Online</title>
+    <title>FruityCrush Sando - Official Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Quicksand', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff0f5;
-            color: #333;
+            background-color: #fff9f9;
+            color: #4a4a4a;
         }
         header {
-            background-color: #ffb6c1;
-            padding: 20px;
+            background-color: #ff94a2;
+            padding: 40px 20px;
             text-align: center;
-            border-bottom: 5px solid #ff69b4;
+            border-bottom: 4px dashed #ffb6c1;
         }
         header h1 {
             margin: 0;
+            font-family: 'Comfortaa', cursive;
             color: #fff;
-            font-size: 2.5em;
-            text-shadow: 2px 2px #ff1493;
+            font-size: 2.8em;
+            text-shadow: 3px 3px rgba(214, 69, 93, 0.3);
+        }
+        header p {
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.1em;
+            margin-top: 10px;
+            letter-spacing: 1px;
         }
         .disclaimer {
-            background-color: #ffffe0;
-            border: 2px dashed #ff0000;
-            padding: 10px;
+            background-color: #fff3cd;
+            border: 2px dashed #ffc107;
+            padding: 12px;
             text-align: center;
-            font-weight: bold;
-            color: #ff0000;
-            margin: 15px auto;
-            max-width: 800px;
-            border-radius: 8px;
+            font-weight: 700;
+            color: #856404;
+            margin: 20px auto;
+            max-width: 850px;
+            border-radius: 10px;
+            font-size: 0.9em;
+        }
+        .section-title {
+            text-align: center;
+            font-family: 'Comfortaa', cursive;
+            color: #d6455d;
+            font-size: 2em;
+            margin-top: 40px;
         }
         .container {
             max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
+            margin: 0 auto 50px auto;
+            padding: 10px;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             flex-wrap: wrap;
         }
         .product-card {
             background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(214,69,93,0.08);
             width: 300px;
-            margin: 20px;
+            margin: 25px;
             text-align: center;
             overflow: hidden;
-            border: 2px solid #ffb6c1;
+            border: 1px solid #ffe4e1;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        /* Efek interaktif pas kartu disentuh */
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(214,69,93,0.15);
         }
         .product-img {
             width: 100%;
             height: 250px;
-            background-color: #ffe4e1;
+            object-fit: cover;
+            background-color: #ffeef0;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: bold;
-            color: #ff69b4;
+            font-weight: 700;
+            color: #ff94a2;
         }
         .product-info {
-            padding: 20px;
+            padding: 25px;
         }
         .product-title {
-            font-size: 1.4em;
-            color: #ff1493;
-            margin: 10px 0;
+            font-family: 'Comfortaa', cursive;
+            font-size: 1.3em;
+            color: #d6455d;
+            margin: 0 0 10px 0;
+        }
+        .product-desc {
+            font-size: 0.95em;
+            color: #7a7a7a;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            height: 60px;
         }
         .product-price {
-            font-size: 1.2em;
-            font-weight: bold;
+            font-size: 1.4em;
+            font-weight: 700;
             color: #333;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         .btn-order {
-            display: inline-block;
-            background-color: #ff69b4;
+            display: block;
+            background-color: #ff94a2;
             color: white;
-            padding: 10px 20px;
+            padding: 12px;
             text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: 0.3s;
+            border-radius: 15px;
+            font-weight: 700;
+            font-size: 1em;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
         }
         .btn-order:hover {
-            background-color: #ff1493;
+            background-color: #d6455d;
         }
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #ffb6c1;
+            padding: 30px 20px;
+            background-color: #ff94a2;
             color: white;
-            margin-top: 5px;
+            font-size: 0.9em;
+            font-weight: 700;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>🍓 FruityCrush Sando 🍇</h1>
-        <p style="color: white; font-weight: bold;">Fresh • Soft • Delicious Japanese Fruit Sando</p>
+        <h1>FruityCrush Sando</h1>
+        <p>🍓 Fresh • Soft • Delicious Japanese Fruit Sando 🍇</p>
+    </header>
+
+    <div class="disclaimer">
+        ⚠️ PEMBERITAHUAN: Website ini dibuat khusus untuk simulasi tugas praktikum mata kuliah Bisnis Digital Universitas Bhayangkara Jakarta Raya dan BELUM melayani transaksi komersial secara nyata.
+    </div>
+
+    <h2 class="section-title">💎 Our Premium Menu 💎</h2>
+
+    <div class="container">
+        <div class="product-card">
+            <div class="product-img">🍓 [ Varian Ruby Strawberry ]</div>
+            <div class="product-info">
+                <h3 class="product-title">Ruby Strawberry</h3>
+                <p class="product-desc">Kesegaran buah stroberi utuh pilihan berbalut whipping cream premium super lembut.</p>
+                <div class="product-price">Rp 12.000</div>
+                <a href="https://wa.me/61234567890?text=Halo%20FruityCrush,%20saya%20mau%20simulasi%20order%20Ruby%20Strawberry" target="_blank" class="btn-order">Beli via WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img">🍇 [ Varian Sapphire Grape ]</div>
+            <div class="product-info">
+                <h3 class="product-title">Sapphire Grape</h3>
+                <p class="product-desc">Sensasi manis segar buah anggur pilihan yang juicy melimpah di setiap gigitan.</p>
+                <div class="product-price">Rp 12.000</div>
+                <a href="https://wa.me/61234567890?text=Halo%20FruityCrush,%20saya%20mau%20simulasi%20order%20Sapphire%20Grape" target="_blank" class="btn-order">Beli via WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 FruityCrush Official - Area Kampus Ubhara Bekasi.<br>Dikembangkan Khusus untuk Memenuhi Tugas Akademik Kelompok Manajemen.</p>
+    </footer>
+
+</body>
+</html>
     </header>
 
     <div class="disclaimer">
