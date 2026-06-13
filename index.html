@@ -1,4 +1,4 @@
-           <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -34,6 +34,13 @@
             font-size: 1.1em;
             margin-top: 10px;
             letter-spacing: 1px;
+            line-height: 1.6;
+        }
+        /* Membuat Japanese Fruit Sando terpisah dan turun ke bawah dengan rapi */
+        header p span {
+            display: block;
+            font-size: 1.05em;
+            margin-top: 5px;
         }
         .disclaimer {
             background-color: #fff3cd;
@@ -66,8 +73,8 @@
             background-color: #fff;
             border-radius: 20px;
             box-shadow: 0 8px 20px rgba(214,69,93,0.08);
-            width: 300px;
-            margin: 25px;
+            width: 280px; /* Diubah ke 280px agar lebih ramping dan proporsional di layar HP */
+            margin: 15px; /* Jarak margin disesuaikan agar pas di tampilan mobile */
             text-align: center;
             overflow: hidden;
             border: 1px solid #ffe4e1;
@@ -79,7 +86,7 @@
         }
         .product-img {
             width: 100%;
-            height: 250px;
+            height: 240px; /* Sedikit disesuaikan agar seimbang dengan lebar kotak yang baru */
             object-fit: cover;
             background-color: #ffeef0;
             display: flex;
@@ -89,7 +96,7 @@
             color: #ff94a2;
         }
         .product-info {
-            padding: 25px;
+            padding: 22px;
         }
         .product-title {
             font-family: 'Comfortaa', cursive;
@@ -133,6 +140,7 @@
             color: white;
             font-size: 0.9em;
             font-weight: 700;
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -140,14 +148,15 @@
 
     <header>
         <h1>FruityCrush Sando</h1>
-        <p>🍓 Fresh • Soft • Delicious Japanese Fruit Sando 🍇</p>
+        <!-- Slogan yang sudah dipisah posisinya: Fresh Soft Delicious di atas, Japanese Fruit Sando di bawahnya -->
+        <p>🍓 Fresh • Soft • Delicious <span>Japanese Fruit Sando 🍇</span></p>
     </header>
 
     <div class="disclaimer">
         ⚠️ PEMBERITAHUAN: Website ini disediakan khusus untuk simulasi Tugas Praktikum mata kuliah Bisnis Digital Ubhara Bekasi dan BELUM melayani transaksi nyata.
     </div>
 
-    <h2 class="section-title">💎 Our Premium Menu 💎</h2>
+    <h2 class="section-title">💎 Our Menu 💎</h2>
 
     <div class="container">
         <!-- Menu 1 -->
@@ -157,7 +166,7 @@
                 <h3 class="product-title">Ruby Strawberry</h3>
                 <p class="product-desc">Kesegaran buah stroberi utuh pilihan berbalut whipping cream premium super lembut.</p>
                 <div class="product-price">Rp 12.000</div>
-                <a href="https://wa.me/6281234567890?text=Halo%20FruityCrush,%20saya%20mau%20simulasi%20order%20Ruby%20Strawberry" target="_blank" class="btn-order">Beli via WhatsApp</a>
+                <a href="https://wa.me/6285924135357?text=Halo%20FruityCrush,%20saya%20mau%20simulasi%20order%20Ruby%20Strawberry" target="_blank" class="btn-order">Beli via WhatsApp</a>
             </div>
         </div>
 
@@ -168,13 +177,13 @@
                 <h3 class="product-title">Sapphire Grape</h3>
                 <p class="product-desc">Sensasi manis segar buah anggur pilihan yang juicy melimpah di setiap gigitan.</p>
                 <div class="product-price">Rp 12.000</div>
-                <a href="https://wa.me/6281234567890?text=Halo%20FruityCrush,%20saya%20mau%20simulasi%20order%20Sapphire%20Grape" target="_blank" class="btn-order">Beli via WhatsApp</a>
+                <a href="https://wa.me/6285924135357?text=Halo%20FruityCrush,%20saya%20mau%20simulasi%20order%20Sapphire%20Grape" target="_blank" class="btn-order">Beli via WhatsApp</a>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 FruityCrush Official - Area Kampus Ubhara Bekasi. All Rights Reserved untuk Tugas Manajemen.</p>
+        <p>&copy; 2026 FruityCrush Official - Area Kampus Ubhara Bekasi.<br>All Rights Reserved untuk Tugas Manajemen.</p>
     </footer>
 
 </body>
